@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 @MainDiscountPolicy
-//@Primary
+@Primary
 public class RateDiscountPolicy implements DiscountPolicy{
 
     private int discountPolicy = 10;
