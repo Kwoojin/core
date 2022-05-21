@@ -13,6 +13,7 @@ public class BeanLifeCycleTest {
     public void lifeCycleTest() {
         ConfigurableApplicationContext ac = new AnnotationConfigApplicationContext(LifeCycleConfig.class);
         NetworkClient client = ac.getBean(NetworkClient.class);
+        // url = nuil - 수정자 주입을 통해 setURL()이 호출되어야함
         ac.close();
     }
 
